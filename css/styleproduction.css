@@ -9,7 +9,7 @@ Secondary Color (Yellow): #8e7c7c;
     --primary-color: #008080;
     --secondary-color: #8e7c7c;
     --text-color: #F5F5DC;
-    --link-color: #00008B;
+    --link-color: #FDE3A7;
     --font-family: 'Bitter', serif;
   }
   
@@ -42,7 +42,7 @@ Secondary Color (Yellow): #8e7c7c;
     color: navy;
   }
   
-  a: {
+  a {
     color: var(--link-color);
   }
   
@@ -56,7 +56,7 @@ Secondary Color (Yellow): #8e7c7c;
     text-decoration: none;
   }
   
-  a:active {
+    a:active {
     /* selected link */
     color: #000000;
   }
@@ -71,14 +71,16 @@ Secondary Color (Yellow): #8e7c7c;
     background-color: #F5DEB3;
     color: #008080;
     height: 2em;
-    width: 15%;
+    width: 20%;
     padding: 8px 12px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
+
+
   }
   button:hover {
     opacity: 0.8;
@@ -102,6 +104,15 @@ Secondary Color (Yellow): #8e7c7c;
     -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
             box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
+
+  .indbuttons {
+    display: inline-flexbox;
+  }
+ 
+  .maintextlink {
+    text-align: center;
+    }
+
   .button_3 {
     display: inline-block;
     border: 2px solid black;
@@ -112,14 +123,12 @@ Secondary Color (Yellow): #8e7c7c;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
     background-color: #F5DEB3;
     color: #008080;
-    height: 4em;
-    width: 30%;
+    height: 40px;
+    width: 25%;
     padding: 8px 12px;
   
     text-align: center;
-    height: 40px;
-    line-height: 30px;
-    font-size: 16px;
+    font-size: 14px solid;
     margin: 4px 2px;
     cursor: pointer;
     -webkit-transition-duration: 0.9s;
@@ -130,7 +139,7 @@ Secondary Color (Yellow): #8e7c7c;
     opacity: 0.8;
     -webkit-transition-duration: 0.9s;
             transition-duration: 0.9s;
-    font-size:18px;
+    font-size:18px solid;
     background-color: #F5DEB3;
     color: #008080;
     -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -139,6 +148,11 @@ Secondary Color (Yellow): #8e7c7c;
   .button_3 {
     text-decoration: none;
   }
+
+  * {
+    box-sizing: border-box;
+  }
+
   .profile_portrait {
     float: left;
     width: 250px;
