@@ -185,18 +185,52 @@ button:hover {
   flex-grow: 1;
   text-align: right;
 }
-.navigation-list {
-  list-style-type: none;
-}
-.navigation-list li {
-  display: inline-block;
-  margin-left: 30px;
-  }
-
-
-.navigation-list__item {
-  border-bottom: 2px solid;
-}
+.navigation-list { 
+  list-style-type: none; 
+  } 
+ .navigation-list li { 
+  display: inline-block; 
+  margin-left: 30px; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  } 
+ 
+ .navigation-list li:hover { 
+  background-color: #9B1C26; 
+  color: #27262c; 
+  border-radius: 5px; 
+  animation: spring 400ms ease-out; 
+  font-weight: bold; 
+  font-size: 1.2rem; 
+  transform: rotate(20deg); 
+  } 
+ 
+ @keyframes spring { 
+  15% { 
+  -webkit-transform-origin: center center; 
+  -webkit-transform: scale(1.2, 1.1); 
+  } 
+  40% { 
+  -webkit-transform-origin: center center; 
+  -webkit-transform: scale(0.95, 0.95); 
+  } 
+  75% { 
+  -webkit-transform-origin: center center; 
+  -webkit-transform: scale(1.05, 1); 
+  } 
+  100% { 
+  -webkit-transform-origin: center center; 
+  -webkit-transform: scale(1, 1); 
+  } 
+  } 
+ 
+ .navigation-list__item { 
+  border-bottom: 2px solid; 
+  } 
+ 
+ .navigation-list li:active { 
+  transform: translateY(4px); 
+  } 
 
 .grid {
   display: grid;
@@ -300,13 +334,13 @@ button:hover {
   transform: translate(10px,10px);
 }
 100% {
-  fill: #f76414;
+  fill: #9B1C26;
   transform: translate(-80px,10px);
 }
 }
 
 .eyes {
-  animation: 30s eyes-color infinite alternate linear;
+  animation: 5s eyes-color infinite alternate linear;
 }
 
 .svg-container { width: device-with; margin: auto;
@@ -315,14 +349,50 @@ button:hover {
 .svg-container svg { width: 100%;
 }
 
-@media all and (max-width: 500px) {
-.contactbody {
-  max-width:100%;
-}
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .contactbody {
-    max-width:100%;
-  }
-  }
+@media all and (max-width: 500px) { 
+  .contactbody { 
+  max-width:100%; 
+  } 
+  } 
+  
+  @media all and (min-width: 500px) and (max-width: 750px) { 
+  .contactbody { 
+  max-width:100%; 
+  } 
+  } 
+ 
+  @media all and (max-width: 500px) { 
+  .aboutbody { 
+  max-width:100%; 
+  } 
+  } 
+  
+  @media all and (min-width: 500px) and (max-width: 750px) { 
+  .aboutbody { 
+  max-width:100%; 
+  } 
+  } 
+ 
+  @media all and (max-width: 500px) { 
+  .indexbody { 
+  max-width:100%; 
+  } 
+  } 
+  
+  @media all and (min-width: 500px) and (max-width: 750px) { 
+  .indexbody { 
+  max-width:100%; 
+  } 
+  } 
+  
+  @media all and (max-width: 500px) { 
+  .portfoliobody { 
+  max-width:100%; 
+  } 
+  } 
+  
+  @media all and (min-width: 500px) and (max-width: 750px) { 
+  .portfoliobody { 
+  max-width:100%; 
+  } 
+  } 
