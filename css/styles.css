@@ -163,6 +163,15 @@ button:hover {
   text-align: center;
   border-top: solid #F5DEB3;
 }
+
+.findme {
+  font-weight: bold;
+  font-optical-sizing: auto;
+}
+
+.page-footer strong {margin-top: 15px;  margin-bottom: 15px;
+}
+
 .page-header {
   display: flex;
   margin: auto;
@@ -233,6 +242,12 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 500px) { 
+  .svg-container { 
+  display: none;
+  }
+  }
+
 .portfolioh1{
   text-align: center;
 }
@@ -294,3 +309,20 @@ button:hover {
   animation: 30s eyes-color infinite alternate linear;
 }
 
+.svg-container { width: device-with; margin: auto;
+}
+
+.svg-container svg { width: 100%;
+}
+
+@media all and (max-width: 500px) {
+.contactbody {
+  max-width:100%;
+}
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .contactbody {
+    max-width:100%;
+  }
+  }
