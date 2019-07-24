@@ -267,7 +267,7 @@ button:hover {
  height: auto; 
  } 
 .grid__item { 
- border: 1px solid #000; 
+    border: 1px solid #000; 
  grid-template-areas: center; 
  padding: 10px; 
  width: auto; 
